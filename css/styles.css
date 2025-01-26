@@ -1,0 +1,33 @@
+@import url(reset.css);
+@import url(base.css);
+@import url(header.css);
+@import url(body.css);
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    background-color: var(--color-main);
+    /* box-sizing: border-box; */
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.button-common {
+    text-transform: uppercase;
+    border-radius: 4.8em;
+}
+
+section {
+    display: flex;
+}

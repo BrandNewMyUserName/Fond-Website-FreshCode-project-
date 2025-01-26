@@ -1,0 +1,356 @@
+/*  Перша секція */
+.hero{
+    align-items: center;
+    background-image: url(../images/hero_image.png);
+    background-size: cover; /* Масштабувати фото, щоб покривало всю секцію */
+    background-position: center; /* Центрування зображення */
+    background-position: bottom; /* Центрування зображення */
+    background-repeat: no-repeat; /* Заборонити повторення */
+    height: 100vh;
+    margin-top: 0.18vh;
+    /* justify-content: center; */
+}
+
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    /* justify-content: flex-start; */
+    /* align-items: flex-start; */
+
+    width: 30%;
+
+    padding-left: 6.5rem;
+    /* padding-left: 5%; */
+}
+
+.hero__content h1{
+    font-size: 3.5em;
+    color: white;
+}
+
+.hero__content p {
+    font-size: 1.25rem;
+    width: 70%;
+}
+
+/* @media (max-width: 1263px) {
+    .hero__content p {
+        width: 100%;
+    }
+} */
+
+.info__item__cta {
+    background-color: var(--color-button-main);
+    margin-bottom: 10rem;
+    width: 16rem;
+    height: 4rem;
+}
+
+.hero__content__cta{
+    background-color: white;
+    width: 16rem;
+    height: 4rem;
+}
+
+.contacts__newsletter__cta{
+    background-color: var(--color-button-main);
+    width: 100%;
+    height: 3.2rem;
+}
+
+
+/* @media (max-width: 1210px) {
+    .hero__content {
+        padding-left: 5rem;
+    }   
+
+    .hero__content h1 {
+        font-size: 2.8em;
+    }
+
+    .hero__content p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .hero__content__cta{
+        font-size: 0.9rem;
+        width: 12rem;
+        height: 3.5rem;
+    }
+}
+
+
+@media (max-width: 930px) {
+
+    .hero__content {
+        padding-left: 5rem;
+    }   
+    
+    .hero__content h1 {
+        font-size: 2.4em;
+    }
+
+    .hero__content p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .hero__content__cta{
+        font-size: 0.9rem;
+        width: 12rem;
+        height: 3.5rem;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .hero__content {
+        width: 50%;
+        padding-left: 2.5rem;
+    }   
+    
+    .hero__content h1 {
+        font-size: 2.4em;
+    }
+
+    .hero__content p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .hero__content__cta{
+        font-size: 0.9rem;
+        width: 12rem;
+        height: 3.5rem;
+    }
+} */
+
+/*  Друга секція */
+.about-us{
+    height: 80vh;
+    align-items: center;
+}
+
+.about-us__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15%;
+}
+
+.about-us__content h2 {
+    font-size: 3.75rem;
+    padding-bottom: 1rem;
+}
+
+.about-us__content h4 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+.about-us__content p {
+    font-size: 1.25rem;
+    color: #73A6B1;
+}
+
+/*  Третя секція */
+
+.info{
+    flex-direction: column;
+    align-items: center; 
+    gap: 5vh;
+}
+
+.info__item{
+    display: flex;
+    background-color: var(--color-submain);
+    margin: 0 5vw;
+}
+
+.info__item__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vw;
+    padding: 5vh 4vw; 
+}
+
+
+.info__item__content__text{
+    width: 40%;
+}
+
+.info__item__content__text h3{
+    font-size: 2.8rem;
+    padding-bottom: 0.6rem;
+}
+
+.info__item__content__text p{
+    font-size: 1.25rem;
+}
+
+.info__item__content__image{
+    max-width: 50%;
+}
+
+
+/* Четверта секція */
+.our-mission{
+    justify-content: center;
+    align-items: center;
+}
+.our-mission__content{
+    position: relative;
+    background-color: var(--color-submain);
+    width: 80%;
+    margin: 14rem 0;
+}
+
+.our-mission__content p{
+    width: 50%;
+    font-size: 1.75rem;
+    padding: 5.6rem 0 5.6rem 3.8rem;
+}
+
+.our-mission__content img {
+    position: absolute;
+}
+
+#smiley-kids {
+    bottom: 0;
+    left: 60%;
+    width: 35%;
+}
+
+#vector{
+    bottom: 5%;
+    left: 55%;
+    width: 45%;
+}
+
+/* П'ята секція */
+.donation{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3rem; 
+    /* TODO 3rem = 50px, maybe change to vw */
+}
+
+.donation__title{
+    position: relative;
+    top: 0;
+}
+
+.donation__title h2 {
+    font-size: 3.75rem;
+    padding-bottom: 1rem;
+}
+
+.donation__title p {
+    font-size: 1.25rem;
+    color: #73A6B1;
+}
+
+.donation__goal{
+    font-size: 1.7rem;
+} 
+
+.donation__goal__current-sum {
+    display: flex;
+    justify-content: center;
+}
+
+.donation__goal__current-sum p {
+    font-size: 3.75rem;
+}
+
+.border-line{
+    /* position: relative; */
+    /* height: 80px; */
+    border: 1.5px solid #9AD2DE;
+    margin: 0 0.3rem;
+}
+
+.donation__cta {
+    background-color: var(--color-button-main);
+    width: 16rem;
+    height: 4rem;
+    margin-bottom: 10rem;
+}
+
+/* Шоста секція */
+.contacts{
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; 
+    background-color: var(--color-contacts);
+    /* TODO 3rem = 50px, maybe change to vw */
+}
+
+.contacts__links{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    width: 90%;
+    gap: 3%;
+}
+
+.contacts__links__title{
+    width: 50%;
+    font-size: 3.75rem;
+    text-align: center;
+}
+
+.contacts__links__title h2{
+    top: 0;
+}
+
+.contacts__links__content{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    bottom: 0;
+    gap: 3.5rem;
+}
+
+.contacts__newsletter{
+    width: 90%;
+    margin-bottom: 10rem;
+}
+
+.contacts__newsletter__content{
+    display: flex;
+    gap: 5%;
+    background-color: white;
+    padding: 5%;
+}
+
+
+.contacts__newsletter__content__text{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+    right: 0;
+}
+
+.contacts__newsletter__content__text p{
+    width: 70%;
+    padding-bottom: 0.7rem;
+}
+
+.contacts__newsletter__content__text input{
+    width: 100%;
+    height: 3rem;
+    border-radius: 1.8em;
+    background-color: var(--color-contacts);
+}
+
+
+/*  */
+/* БЛОК */
+/*  */
+
