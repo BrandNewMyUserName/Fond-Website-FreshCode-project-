@@ -9,16 +9,18 @@
 <body>
     <header class="header--common-height">
             <div class="header__content">
-                <svg class="header__logo" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7327 64.1923C54.2007 60.9042 65 47.9633 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 44.8494 6.88782 55.59 17.0314 61.0898C17.1874 52.9961 19.9089 43.3947 27.7592 33.6347L20.2474 28.177L29.8049 28.177L32.7583 19.0873L35.7117 28.177L45.2692 28.177L37.5371 33.7948L40.4905 42.8845L32.8116 37.3055C33.5336 45.4387 35.5157 55.5191 39.7327 64.1923Z" fill="black"/>
-                </svg>
+                <a href="main_page.html">
+                    <svg class="header__logo" width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.7327 64.1923C54.2007 60.9042 65 47.9633 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 44.8494 6.88782 55.59 17.0314 61.0898C17.1874 52.9961 19.9089 43.3947 27.7592 33.6347L20.2474 28.177L29.8049 28.177L32.7583 19.0873L35.7117 28.177L45.2692 28.177L37.5371 33.7948L40.4905 42.8845L32.8116 37.3055C33.5336 45.4387 35.5157 55.5191 39.7327 64.1923Z" fill="black"/>
+                    </svg>
+                </a>
                 <nav>
                     <ul>
-                        <li><a href="#">Контакти</a></li>
-                        <li><a href="#">Головна</a></li>
-                        <li><a href="#">З чим ми працюємо</a></li>
+                        <li><a href="#contacts-link">Контакти</a></li>
+                        <li><a href="#main-link">Головна</a></li>
+                        <li><a href="#we-work-with-link">З чим ми працюємо</a></li>
                     </ul>
-                    <button class="button-common header__content__button">Підтримати фонд</button>
+                    <button class="button-common-blue header__content__button">Підтримати фонд</button>
                 </nav>
             </div>
         </div>
@@ -27,11 +29,11 @@
 
     <main>
         <!-- Перша секція -->
-        <section class="hero">
+        <section class="hero" id="main-link">
             <div class="hero__content">
                 <h1>Фонд підтримки постраждалих від війни</h1>
                 <p>Ми хочемо допомогти кожному, хто постраждав під час війни</p>
-                <button class="button-common hero__content__cta">Підтримати фонд</button>
+                <button class="button-common-blue hero__content__cta">Підтримати фонд</button>
             </div>
         </section>
 
@@ -47,7 +49,7 @@
         </section>
 
         <!-- Третя секція -->
-        <section class="info">
+        <section class="info" id="we-work-with-link">
             <article class="info__item">
                 <div class="info__item__content">
                     <div class="info__item__content__text">
@@ -69,7 +71,7 @@
                 </div>
             </article>
 
-            <button class="button-common info__item__cta">Дізнатися більше</button>
+            <button class="button-common-blue info__item__cta">Дізнатися більше</button>
         </section>
 
         <!-- Четверта секція -->
@@ -100,11 +102,11 @@
                 </div>
             </div>
             
-            <button class="button-common donation__cta">Дізнатися більше</button>
+            <button class="button-common-blue donation__cta">Дізнатися більше</button>
         </section>
 
-        <!-- Шоста секція -->
-        <section class="contacts">
+        <!-- Футер -->
+        <footer class="contacts" id="contacts-link">
             <div class="contacts__links">
 
                 <div class="contacts__links__title">
@@ -155,16 +157,18 @@
             </div>
             <div class="contacts__newsletter">
                 <div class="contacts__newsletter__content">
-                    <img src="../images/letter-image.png" alt="Іконка письма">
+                    <div class="contacts__newsletter__content__image">
+                        <img src="../images/letter-image.png" alt="Іконка письма">
+                    </div>
                     <div class="contacts__newsletter__content__text">
                         <p>Щоб дізнаватися усі новини фестивалю, підпишися на нашу розсилку</p>
                         <input type="text" placeholder="  Ім'я">
                         <input type="text" placeholder="  Емейл">
-                        <button class="button-common contacts__newsletter__cta">Підписатися</button>
+                        <button class="button-common-blue contacts__newsletter__cta">Підписатися</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     </main>
     <script src='../js/script.js'></script>
 </body>

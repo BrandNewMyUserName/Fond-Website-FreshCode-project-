@@ -2,6 +2,7 @@
 @import url(base.css);
 @import url(header.css);
 @import url(body.css);
+@import url(footer.css);
 
 html {
     font-size: 16px;
@@ -23,11 +24,17 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-.button-common {
+.button-common-blue {
     text-transform: uppercase;
+    background-color: var(--color-button-main);
     border-radius: 4.8em;
 }
 
-section {
+.button-common-blue:hover{
+    background-color: #4ec1eb;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.311); 
+}
+
+header, section, footer {
     display: flex;
 }

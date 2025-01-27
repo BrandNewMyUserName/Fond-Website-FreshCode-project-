@@ -2,26 +2,20 @@
 .hero{
     align-items: center;
     background-image: url(../images/hero_image.png);
-    background-size: cover; /* Масштабувати фото, щоб покривало всю секцію */
-    background-position: center; /* Центрування зображення */
-    background-position: bottom; /* Центрування зображення */
-    background-repeat: no-repeat; /* Заборонити повторення */
+    background-size: cover; 
+    background-position: bottom; 
+    background-repeat: no-repeat; 
     height: 100vh;
     margin-top: 0.18vh;
-    /* justify-content: center; */
+    font-size: 16px;
 }
 
 .hero__content{
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
-    /* justify-content: flex-start; */
-    /* align-items: flex-start; */
-
+    gap: 1.25em;
     width: 30%;
-
-    padding-left: 6.5rem;
-    /* padding-left: 5%; */
+    padding-left: 6.5em;
 }
 
 .hero__content h1{
@@ -30,107 +24,47 @@
 }
 
 .hero__content p {
-    font-size: 1.25rem;
-    width: 70%;
-}
-
-/* @media (max-width: 1263px) {
-    .hero__content p {
-        width: 100%;
-    }
-} */
-
-.info__item__cta {
-    background-color: var(--color-button-main);
-    margin-bottom: 10rem;
-    width: 16rem;
-    height: 4rem;
+    font-size: 1.25em;
 }
 
 .hero__content__cta{
-    background-color: white;
-    width: 16rem;
-    height: 4rem;
+    background-color: white!important;
+    width: 16em;
+    height: 4em;
 }
 
-.contacts__newsletter__cta{
-    background-color: var(--color-button-main);
-    width: 100%;
-    height: 3.2rem;
+.hero__content__cta:hover{
+    background-color: rgb(249, 250, 223)!important;
 }
 
-
-/* @media (max-width: 1210px) {
-    .hero__content {
-        padding-left: 5rem;
-    }   
-
-    .hero__content h1 {
-        font-size: 2.8em;
-    }
-
-    .hero__content p {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    .hero__content__cta{
-        font-size: 0.9rem;
-        width: 12rem;
-        height: 3.5rem;
+@media (max-width: 1080px) {
+    .hero {
+        font-size: 14px;
     }
 }
-
 
 @media (max-width: 930px) {
-
-    .hero__content {
-        padding-left: 5rem;
-    }   
-    
-    .hero__content h1 {
-        font-size: 2.4em;
-    }
-
-    .hero__content p {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    .hero__content__cta{
-        font-size: 0.9rem;
-        width: 12rem;
-        height: 3.5rem;
+    .hero {
+        font-size: 12px;
     }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 810px) {
+    .hero {
+        font-size: 12px;
+        background-position: center;
+    }
 
     .hero__content {
-        width: 50%;
-        padding-left: 2.5rem;
-    }   
-    
-    .hero__content h1 {
-        font-size: 2.4em;
+        width: 40%;
     }
-
-    .hero__content p {
-        font-size: 1.1rem;
-        width: 100%;
-    }
-
-    .hero__content__cta{
-        font-size: 0.9rem;
-        width: 12rem;
-        height: 3.5rem;
-    }
-} */
+}
 
 /*  Друга секція */
 .about-us{
     height: 80vh;
     align-items: center;
+    font-size: 16px;
 }
 
 .about-us__content{
@@ -141,32 +75,62 @@
 }
 
 .about-us__content h2 {
-    font-size: 3.75rem;
+    font-size: 3.75em;
     padding-bottom: 1rem;
 }
 
 .about-us__content h4 {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     padding-bottom: 0.5rem;
 }
 
 .about-us__content p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     color: #73A6B1;
 }
 
-/*  Третя секція */
+@media (max-width: 1195px) {
+    .about-us {
+        font-size: 14px;
+    }
+}
 
+@media (max-width: 1050px) {
+    .about-us {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 890px) {
+    .about-us {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 810px) {
+    .about-us {
+        font-size: 10px;
+    }
+}
+
+/*  Третя секція */
 .info{
     flex-direction: column;
     align-items: center; 
     gap: 5vh;
+    font-size: 16px;
 }
 
 .info__item{
     display: flex;
     background-color: var(--color-submain);
     margin: 0 5vw;
+}
+
+.info__item__cta {
+    margin-bottom: 10em;
+    width: 16em;
+    height: 4em;
 }
 
 .info__item__content{
@@ -177,24 +141,40 @@
     padding: 5vh 4vw; 
 }
 
-
 .info__item__content__text{
     width: 40%;
 }
 
 .info__item__content__text h3{
-    font-size: 2.8rem;
-    padding-bottom: 0.6rem;
+    font-size: 2.5em;
+    padding-bottom: 0.6em;
 }
 
 .info__item__content__text p{
-    font-size: 1.25rem;
+    font-size: 1.25em;
 }
 
 .info__item__content__image{
     max-width: 50%;
 }
 
+@media (max-width: 1190px) {
+    .info {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .info {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 890px) {
+    .info {
+        font-size: 10px;
+    }
+}
 
 /* Четверта секція */
 .our-mission{
@@ -205,13 +185,13 @@
     position: relative;
     background-color: var(--color-submain);
     width: 80%;
-    margin: 14rem 0;
+    margin: 25vh 0;
 }
 
 .our-mission__content p{
+    font-size: 28px;
+    padding: 3.2em 0 3.2em 2.1714em;
     width: 50%;
-    font-size: 1.75rem;
-    padding: 5.6rem 0 5.6rem 3.8rem;
 }
 
 .our-mission__content img {
@@ -222,12 +202,26 @@
     bottom: 0;
     left: 60%;
     width: 35%;
+    z-index: 1;
 }
 
 #vector{
     bottom: 5%;
     left: 55%;
     width: 45%;
+    z-index: 0;
+}
+
+@media (max-width: 1035px) {
+    .our-mission__content p{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 940px) {
+    .our-mission {
+        font-size: 10px;
+    }
 }
 
 /* П'ята секція */
@@ -235,8 +229,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 3rem; 
-    /* TODO 3rem = 50px, maybe change to vw */
+    font-size: 16px;
+    gap: 3em; 
 }
 
 .donation__title{
@@ -245,17 +239,17 @@
 }
 
 .donation__title h2 {
-    font-size: 3.75rem;
-    padding-bottom: 1rem;
+    font-size: 3.75em;
+    padding-bottom: 0.2em;
 }
 
 .donation__title p {
-    font-size: 1.25rem;
+    font-size: 1.25em;
     color: #73A6B1;
 }
 
 .donation__goal{
-    font-size: 1.7rem;
+    font-size: 1.7em;
 } 
 
 .donation__goal__current-sum {
@@ -264,93 +258,37 @@
 }
 
 .donation__goal__current-sum p {
-    font-size: 3.75rem;
+    font-size: 3.75em;
 }
 
 .border-line{
-    /* position: relative; */
-    /* height: 80px; */
     border: 1.5px solid #9AD2DE;
-    margin: 0 0.3rem;
+    margin: 0 0.3em;
 }
 
 .donation__cta {
     background-color: var(--color-button-main);
-    width: 16rem;
-    height: 4rem;
-    margin-bottom: 10rem;
+    width: 16em;
+    height: 4em;
+    margin-bottom: 10em;
 }
 
-/* Шоста секція */
-.contacts{
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem; 
-    background-color: var(--color-contacts);
-    /* TODO 3rem = 50px, maybe change to vw */
+@media (max-width: 1020px) {
+    .donation {
+        font-size: 13px;
+    }
 }
 
-.contacts__links{
-    display: flex;
-    justify-content: space-evenly;
-    padding-top: 3rem;
-    width: 90%;
-    gap: 3%;
+@media (max-width: 920px) {
+    .donation {
+        font-size: 11px;
+    }
 }
 
-.contacts__links__title{
-    width: 50%;
-    font-size: 3.75rem;
-    text-align: center;
+@media (max-width: 850px) {
+    .donation {
+        font-size: 10px;
+    }
 }
 
-.contacts__links__title h2{
-    top: 0;
-}
-
-.contacts__links__content{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    bottom: 0;
-    gap: 3.5rem;
-}
-
-.contacts__newsletter{
-    width: 90%;
-    margin-bottom: 10rem;
-}
-
-.contacts__newsletter__content{
-    display: flex;
-    gap: 5%;
-    background-color: white;
-    padding: 5%;
-}
-
-
-.contacts__newsletter__content__text{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 50%;
-    right: 0;
-}
-
-.contacts__newsletter__content__text p{
-    width: 70%;
-    padding-bottom: 0.7rem;
-}
-
-.contacts__newsletter__content__text input{
-    width: 100%;
-    height: 3rem;
-    border-radius: 1.8em;
-    background-color: var(--color-contacts);
-}
-
-
-/*  */
-/* БЛОК */
-/*  */
 
