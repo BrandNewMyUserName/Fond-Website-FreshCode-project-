@@ -23,12 +23,33 @@ header{
     }
 }
 
+.header--common-height .logo {
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.header--shrink .logo {
+    transform: scale(0.9); /* Зменшення логотипа */
+}
+
+
 .header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 3.5em;
     width: 100%;
+}
+
+.header__content__logo{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.logo{
+    width: auto;
+    height: 100%;
 }
 
 nav {
